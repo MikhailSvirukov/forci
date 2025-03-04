@@ -10,5 +10,3 @@ jobs:
       - name: Build
         run:  gcc main.c
         timeout-minutes: 1
-
-      - 
