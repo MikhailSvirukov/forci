@@ -4,8 +4,9 @@ on:
   push:
 
 jobs:
-  run:
-    runs-on: [ubuntu-latest]
+  test:
+    runs-on: ubuntu-latest
     steps:
-        run: gcc src/main.c | ./a.out
-      
+      - name: Build
+        run:  gcc main.c
+        timeout-minutes: 1
