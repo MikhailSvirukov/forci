@@ -4,8 +4,8 @@ on:
   push:
 
 jobs:
-  run_tests:
+  run:
     runs-on: [ubuntu-latest]
     steps:
         run: gcc src/main.c | ./a.out
-      - 
+      
