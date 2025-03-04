@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        run:  gcc main.c
+        run:  gcc src/main.c
         timeout-minutes: 1
